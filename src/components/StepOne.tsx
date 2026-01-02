@@ -3,12 +3,12 @@ import React from "react";
 export default function StepOne({ formData, setFormData }) {
   return (
     <div className="space-y-4">
-      <h2 className="text-lg font-semibold">Step One: About you</h2>
+      <h2 className="text-lg font-semibold text-gray-800">Step One: About you</h2>
 
-      <label className="block text-sm font-medium text-gray-700">
-        <span className="text-gray-500">First Name</span>
+      <label className="block text-sm font-light text-gray-800">
+        <span className="text-sm text-gray-600">First Name</span>
         <input
-          className="mt-1 w-full rounded-lg border border-gray-200 p-3 focus:outline-none focus:ring-2 focus:ring-gray-900"
+          className="mt-1 w-full rounded-lg border border-gray-200 p-3 focus:outline-none focus:ring-2 focus:ring-gray-800"
           value={formData.firstName}
           onChange={(e) =>
             setFormData((prev) => ({ ...prev, firstName: e.target.value }))
@@ -17,7 +17,7 @@ export default function StepOne({ formData, setFormData }) {
         />
       </label>
 
-      <label className="block">
+      <label className="block text-sm font-light text-gray-800">
         <span className="text-sm text-gray-600">Email</span>
         <input
           type="email"
