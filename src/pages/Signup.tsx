@@ -54,7 +54,6 @@ export default function Signup() {
           <p className="text-sm text-gray-500">
             Step {currentStep} of {TOTAL_STEPS}
           </p>
-          <h1 className="text-2xl font-bold">Let’s get you set up</h1>
         </div>
 
         {/* Step content */}
